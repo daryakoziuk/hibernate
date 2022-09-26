@@ -1,0 +1,1135 @@
+[2022-09-25 17:33:38,150] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:33:38,963] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:33:39,188] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:33:39,191] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:33:39,193] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:33:39,193] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:33:39,202] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:33:39,547] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:33:40,099] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:33:40,237] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:33:40,238] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:33:40,261] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:33:40,262] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:33:40,276] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:33:40,280] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:34:42,080] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:34:42,765] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:34:42,865] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:34:42,870] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:34:42,871] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:34:42,871] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:34:42,874] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:34:43,138] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:34:43,714] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:34:43,842] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:34:43,843] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:34:43,857] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:34:43,858] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:34:43,875] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:34:43,876] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:37:28,508] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:37:29,167] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:37:29,291] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:37:29,294] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:37:29,295] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:37:29,296] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:37:29,299] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:37:29,562] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:37:30,099] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:37:30,242] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:37:30,242] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:37:30,257] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:37:30,258] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:37:30,273] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 17:37:30,273] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 17:38:33,502] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:38:34,222] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:38:34,329] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:38:34,332] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:38:34,332] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:38:34,333] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:38:34,336] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:38:34,534] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:38:35,018] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:38:37,160] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:38:37,161] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:38:39,184] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:38:39,184] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:38:41,204] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:38:41,204] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:40:43,565] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:40:44,221] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:40:44,331] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:40:44,333] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:40:44,334] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:40:44,334] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:40:44,336] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:40:44,538] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:40:45,137] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:40:47,319] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:40:47,320] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "REQUESTS" истекло
+Timeout trying to lock table "REQUESTS"; SQL statement:
+drop table if exists requests cascade  [50200-210]
+[2022-09-25 17:40:49,371] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:40:49,371] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "REQUESTS" истекло
+Timeout trying to lock table "REQUESTS"; SQL statement:
+drop table if exists requests cascade  [50200-210]
+[2022-09-25 17:40:51,409] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:40:51,410] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "REQUESTS" истекло
+Timeout trying to lock table "REQUESTS"; SQL statement:
+drop table if exists requests cascade  [50200-210]
+[2022-09-25 17:42:33,880] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:42:34,525] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:42:34,637] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:42:34,640] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:42:34,641] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:42:34,641] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:42:34,643] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:42:34,834] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:42:35,321] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:42:35,417] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 17:42:35,418] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 17:42:35,446] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 17:42:35,446] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 17:42:35,465] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 17:42:35,466] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 17:42:35,491] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 17:42:35,492] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 17:44:04,280] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:44:04,903] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:44:05,052] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:44:05,055] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:44:05,056] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:44:05,056] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:44:05,060] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:44:05,325] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:44:05,853] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:44:08,082] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:44:08,083] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:44:10,110] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:44:10,111] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:45:07,959] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:45:08,621] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:45:08,766] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:45:08,769] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:45:08,770] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:45:08,770] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:45:08,772] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:45:09,134] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:45:09,814] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:45:12,191] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:45:12,191] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:45:14,211] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:45:14,211] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:47:23,138] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:47:23,892] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:47:24,014] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:47:24,017] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:47:24,018] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:47:24,018] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:47:24,021] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:47:24,335] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:47:24,929] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:47:27,175] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:47:27,175] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:47:29,201] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:47:29,201] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:48:01,921] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:48:02,504] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:48:02,602] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:48:02,604] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:48:02,606] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:48:02,606] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:48:02,608] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:48:02,876] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:48:03,438] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:48:54,913] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:48:55,618] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:48:55,739] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:48:55,741] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:48:55,742] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:48:55,742] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:48:55,745] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:48:55,935] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:48:56,575] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:48:58,812] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:48:58,812] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:49:00,833] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:49:00,833] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:49:17,929] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:49:18,718] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:49:18,819] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:49:18,821] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:49:18,822] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:49:18,822] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:49:18,825] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:49:19,002] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:49:19,497] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:49:21,739] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:49:21,740] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:49:23,764] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:49:23,765] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles cascade  [50200-210]
+[2022-09-25 17:49:47,408] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:49:47,946] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:49:48,034] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:49:48,037] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:49:48,038] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:49:48,038] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:49:48,040] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:49:48,224] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:49:48,765] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:49:51,005] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:49:51,006] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 17:49:53,028] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:49:53,029] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 17:51:56,282] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:51:57,157] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:51:57,265] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:51:57,268] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:51:57,269] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:51:57,269] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:51:57,272] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:51:57,555] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:51:58,112] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:52:04,910] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:52:05,495] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:52:05,585] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:52:05,587] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:52:05,588] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:52:05,588] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:52:05,590] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:52:05,767] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:52:06,315] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:52:28,332] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:52:29,019] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:52:29,108] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:52:29,110] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:52:29,111] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:52:29,111] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:52:29,113] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:52:29,413] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:52:29,959] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:52:32,193] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:52:32,193] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 17:52:34,211] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:52:34,211] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 17:55:52,843] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:55:53,844] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:55:53,974] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:55:53,976] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:55:53,977] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:55:53,977] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:55:53,979] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:55:54,375] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:55:55,075] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:55:57,428] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:55:57,429] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 17:55:59,455] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:55:59,456] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 17:57:37,478] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 17:57:38,147] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 17:57:38,288] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 17:57:38,291] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 17:57:38,291] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 17:57:38,292] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 17:57:38,300] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 17:57:38,599] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 17:57:39,135] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 17:57:41,406] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:57:41,408] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 17:57:43,432] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 17:57:43,432] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:03:49,683] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:03:50,594] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:03:50,711] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:03:50,715] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:03:50,715] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:03:50,716] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:03:50,718] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:03:50,995] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:03:51,545] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:03:53,791] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:03:53,793] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:03:55,821] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:03:55,823] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:08:10,843] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:08:11,909] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:08:12,054] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:08:12,059] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:08:12,059] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:08:12,060] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:08:12,064] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:08:12,385] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:08:12,966] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:08:15,223] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:08:15,223] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:08:17,248] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:08:17,249] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:09:05,179] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:09:05,615] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:09:05,714] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:09:05,717] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:09:05,717] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:09:05,718] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:09:05,720] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:09:05,979] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:09:06,726] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:09:09,054] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:09:09,054] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:09:11,077] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:09:11,077] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:10:56,469] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:10:56,968] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:10:57,114] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:10:57,117] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:10:57,118] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:10:57,118] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:10:57,122] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:10:57,611] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:10:58,573] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:11:00,906] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:11:00,907] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:11:02,927] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:11:02,929] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:14:27,523] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:14:28,304] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:14:28,503] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:14:28,508] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:14:28,509] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:14:28,509] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:14:28,515] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:14:28,831] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:14:29,369] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:14:31,645] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:14:31,645] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:14:33,661] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:14:33,663] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:17:32,306] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:17:32,960] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:17:33,111] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:17:33,115] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:17:33,115] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:17:33,116] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:17:33,120] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:17:33,409] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:17:33,979] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:17:36,216] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:17:36,217] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:17:38,233] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:17:38,233] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:18:05,367] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:18:06,110] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:18:06,216] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:18:06,218] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:18:06,219] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:18:06,220] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:18:06,222] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:18:06,495] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:18:07,086] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:18:09,496] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:18:09,496] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:18:11,521] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:18:11,524] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "ROLES" истекло
+Timeout trying to lock table "ROLES"; SQL statement:
+drop table if exists roles [50200-210]
+[2022-09-25 18:21:06,973] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:21:07,503] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:21:07,598] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:21:07,600] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:21:07,601] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:21:07,601] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:21:07,603] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:21:07,856] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:21:08,657] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:21:51,142] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:21:51,783] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:21:51,883] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:21:51,886] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:21:51,886] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:21:51,886] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:21:51,888] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:21:52,156] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:21:52,710] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:24:22,888] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:24:23,695] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:24:23,798] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:24:23,801] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:24:23,801] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:24:23,802] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:24:23,804] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:24:24,085] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:24:24,648] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:24:24,782] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:24:24,782] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 18:24:24,807] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:24:24,808] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 18:24:24,828] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:24:24,829] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 18:24:24,846] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:24:24,846] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 18:25:36,554] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:25:37,287] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:25:37,408] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:25:37,411] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:25:37,412] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:25:37,412] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:25:37,415] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:25:37,616] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:25:38,124] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:25:38,243] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:25:38,244] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 18:25:38,274] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:25:38,274] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 18:25:38,291] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:25:38,291] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 18:25:38,309] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:25:38,309] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+create table if not exists requests(
+    id int auto_increment primary key ,
+    passport varchar(128) not null ,
+    date_request date not null ,
+    date_return date not null ,
+    user_id int references users(id) on UPDATE cascade
+                            on DELETE cascade ,
+    car_id int not null references cars (id) on DELETE cascade on UPDATE cascade
+) [42102-210]
+[2022-09-25 18:26:54,776] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:26:55,353] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:26:55,495] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:26:55,501] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:26:55,501] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:26:55,502] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:26:55,506] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:26:55,736] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:26:56,230] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:26:56,340] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:26:56,341] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "ROLES" не найдена
+Table "ROLES" not found; SQL statement:
+create table if not exists users(
+id int auto_increment primary key ,
+    name varchar(128) not null ,
+    last_name varchar(128) not null ,
+    role_id int not null references roles(id) on DELETE cascade on UPDATE cascade) [42102-210]
+[2022-09-25 18:26:56,386] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:26:56,386] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "ROLES" не найдена
+Table "ROLES" not found; SQL statement:
+create table if not exists users(
+id int auto_increment primary key ,
+    name varchar(128) not null ,
+    last_name varchar(128) not null ,
+    role_id int not null references roles(id) on DELETE cascade on UPDATE cascade) [42102-210]
+[2022-09-25 18:26:56,413] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:26:56,414] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "ROLES" не найдена
+Table "ROLES" not found; SQL statement:
+create table if not exists users(
+id int auto_increment primary key ,
+    name varchar(128) not null ,
+    last_name varchar(128) not null ,
+    role_id int not null references roles(id) on DELETE cascade on UPDATE cascade) [42102-210]
+[2022-09-25 18:26:56,445] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42102, SQLState: 42S02
+[2022-09-25 18:26:56,446] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Таблица "ROLES" не найдена
+Table "ROLES" not found; SQL statement:
+create table if not exists users(
+id int auto_increment primary key ,
+    name varchar(128) not null ,
+    last_name varchar(128) not null ,
+    role_id int not null references roles(id) on DELETE cascade on UPDATE cascade) [42102-210]
+[2022-09-25 18:27:27,053] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:27:27,872] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:27:27,985] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:27:27,988] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:27:27,989] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:27:27,989] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:27:27,994] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:27:28,229] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:27:28,929] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:27:29,171] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 18:27:29,172] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 18:27:29,198] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 18:27:29,199] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 18:27:29,223] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 18:27:29,226] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 18:28:50,212] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:28:50,921] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:28:51,052] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:28:51,055] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:28:51,055] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:28:51,055] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:28:51,058] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:28:51,342] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:28:51,909] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:28:52,130] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 18:28:52,131] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 18:28:52,148] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 18:28:52,149] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 18:28:52,161] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 90107, SQLState: 90107
+[2022-09-25 18:28:52,162] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Невозможно удалить "ROLES", пока существует зависимый объект "CONSTRAINT_4D4"
+Cannot drop "ROLES" because "CONSTRAINT_4D4" depends on it; SQL statement:
+drop table if exists roles [90107-210]
+[2022-09-25 18:30:01,757] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:30:02,248] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:30:02,340] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:30:02,343] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:30:02,343] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:30:02,343] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:30:02,346] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:30:02,602] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:30:03,552] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:30:05,772] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:30:05,773] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "REQUESTS" истекло
+Timeout trying to lock table "REQUESTS"; SQL statement:
+drop table if exists requests cascade  [50200-210]
+[2022-09-25 18:30:07,828] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:30:07,829] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "REQUESTS" истекло
+Timeout trying to lock table "REQUESTS"; SQL statement:
+drop table if exists requests cascade  [50200-210]
+[2022-09-25 18:30:09,866] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 50200, SQLState: HYT00
+[2022-09-25 18:30:09,868] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Время ожидания блокировки таблицы "REQUESTS" истекло
+Timeout trying to lock table "REQUESTS"; SQL statement:
+drop table if exists requests cascade  [50200-210]
+[2022-09-25 18:30:51,213] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:30:51,933] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:30:52,064] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:30:52,068] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:30:52,069] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:30:52,070] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:30:52,073] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:30:52,327] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:30:52,887] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:31:26,293] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:31:26,975] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:31:27,068] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:31:27,070] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:31:27,071] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:31:27,071] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:31:27,074] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:31:27,360] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:31:27,998] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:37:49,562] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:37:50,016] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:37:50,107] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:37:50,110] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:37:50,110] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:37:50,110] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:37:50,113] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:37:50,375] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:37:51,022] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:38:18,534] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:38:19,198] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:38:19,324] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:38:19,329] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:38:19,330] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:38:19,330] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:38:19,332] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:38:19,583] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:38:20,251] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:41:16,736] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:41:17,481] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:41:17,608] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:41:17,611] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:41:17,612] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:41:17,612] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:41:17,616] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:41:17,946] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:41:18,716] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:41:18,996] ERROR [org.hibernate.hql.internal.ast.ErrorTracker: 62] line 1:8: unexpected token: *
+[2022-09-25 18:41:18,996] ERROR [org.hibernate.hql.internal.ast.ErrorTracker: 57] line 1:8: unexpected token: *
+line 1:8: unexpected token: *
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectClause(HqlBaseParser.java:1387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1148)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:825)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:336)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:200)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:294)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114)
+	at com.dmdev.service.integration.UserIT.checkSaveUser(UserIT.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+[2022-09-25 18:42:48,191] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:42:48,957] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:42:49,089] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:42:49,093] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:42:49,094] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:42:49,095] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:42:49,100] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:42:49,417] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:42:50,123] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:43:24,159] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:43:24,666] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:43:24,749] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:43:24,752] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:43:24,753] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:43:24,753] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:43:24,756] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:43:24,943] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:43:25,450] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:43:39,199] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:43:39,645] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:43:39,786] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:43:39,789] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:43:39,790] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:43:39,790] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:43:39,793] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:43:40,006] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:43:40,760] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 18:44:18,677] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 18:44:19,278] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 18:44:19,452] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 18:44:19,455] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 18:44:19,456] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 18:44:19,457] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 18:44:19,460] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 18:44:19,784] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 18:44:20,402] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:20:27,721] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:20:28,578] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:20:28,720] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:20:28,724] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:20:28,725] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:20:28,725] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:20:28,729] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:20:29,008] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:20:29,608] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:21:02,182] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:21:02,865] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:21:03,016] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:21:03,019] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:21:03,019] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:21:03,020] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:21:03,025] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:21:03,264] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:21:03,953] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:24:57,709] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:24:58,626] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:24:58,772] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:24:58,775] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:24:58,776] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:24:58,776] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:24:58,779] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:24:59,040] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:24:59,626] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:27:09,918] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:27:10,554] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:27:10,678] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:27:10,694] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:27:10,695] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:27:10,695] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:27:10,700] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:27:10,943] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:27:11,911] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:28:54,766] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:28:55,503] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:28:55,615] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:28:55,618] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:28:55,618] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:28:55,619] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:28:55,621] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:28:55,834] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:28:56,423] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:31:13,147] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:31:13,893] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:31:14,052] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:31:14,055] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:31:14,056] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:31:14,056] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:31:14,058] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:31:14,346] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:31:14,937] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:31:52,738] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:31:53,443] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:31:53,543] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:31:53,546] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:31:53,546] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:31:53,547] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:31:53,550] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:31:53,844] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:31:54,417] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:35:30,844] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:35:31,744] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:35:31,857] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:35:31,859] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:35:31,860] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:35:31,860] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:35:31,863] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:35:32,152] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:35:32,796] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:36:52,684] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:36:53,451] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:36:53,575] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:36:53,577] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:36:53,577] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:36:53,578] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:36:53,580] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:36:53,830] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:36:54,411] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:37:14,215] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:37:14,815] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:37:14,902] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:37:14,904] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:37:14,905] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:37:14,905] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:37:14,907] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:37:15,109] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:37:15,689] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:37:47,737] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:37:48,331] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:37:48,426] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:37:48,429] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:37:48,429] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:37:48,430] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:37:48,433] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:37:48,693] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:37:49,327] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:41:46,183] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:41:46,952] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:41:47,060] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:41:47,064] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:41:47,064] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:41:47,065] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:41:47,069] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:41:47,346] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:41:47,932] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:53:48,013] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:53:49,030] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:53:49,197] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:53:49,200] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:53:49,201] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:53:49,202] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:53:49,208] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:53:49,572] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:53:50,468] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:55:08,981] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:55:09,649] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:55:09,749] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:55:09,752] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:55:09,753] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:55:09,753] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:55:09,756] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:55:10,053] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:55:10,634] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:58:29,418] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:58:30,139] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:58:30,270] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:58:30,272] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:58:30,273] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:58:30,273] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:58:30,275] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:58:30,550] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:58:31,177] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:58:31,351] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42122, SQLState: 42S22
+[2022-09-25 21:58:31,352] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Столбец "STAUS" не найден
+Column "STAUS" not found; SQL statement:
+select model, staus from cars [42122-210]
+[2022-09-25 21:58:43,893] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:58:44,501] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:58:44,600] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:58:44,602] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:58:44,603] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:58:44,603] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:58:44,606] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:58:44,820] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:58:45,396] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:58:45,568] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 137] SQL Error: 42122, SQLState: 42S22
+[2022-09-25 21:58:45,569] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 142] Столбец "STAUS" не найден
+Column "STAUS" not found; SQL statement:
+select model, staus from cars [42122-210]
+[2022-09-25 21:59:15,288] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:59:15,831] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:59:15,918] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:59:15,921] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:59:15,922] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:59:15,922] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:59:15,926] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:59:16,103] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:59:16,635] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-25 21:59:25,345] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-25 21:59:25,919] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-25 21:59:26,003] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-25 21:59:26,006] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-25 21:59:26,006] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-25 21:59:26,006] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-25 21:59:26,009] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-25 21:59:26,191] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-25 21:59:26,738] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 09:44:46,823] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 09:44:47,695] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 09:44:47,926] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 09:44:47,929] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 09:44:47,930] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 09:44:47,930] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 09:44:47,933] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 09:44:48,328] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 09:44:49,241] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 09:46:12,596] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 09:46:13,315] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 09:46:13,421] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 09:46:13,425] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 09:46:13,425] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 09:46:13,425] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 09:46:13,428] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 09:46:13,698] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 09:46:14,283] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 09:59:50,609] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 09:59:51,383] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 09:59:51,485] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 09:59:51,487] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 09:59:51,488] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 09:59:51,488] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 09:59:51,490] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 09:59:51,741] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 09:59:52,338] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 10:04:26,928] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 10:04:27,724] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 10:04:27,822] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 10:04:27,825] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 10:04:27,825] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 10:04:27,826] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 10:04:27,829] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 10:04:28,104] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 10:04:28,681] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 10:09:02,030] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 10:09:02,822] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 10:09:02,963] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 10:09:02,965] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 10:09:02,966] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 10:09:02,966] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 10:09:02,968] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 10:09:03,185] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 10:09:03,792] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 10:10:45,425] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 10:10:46,092] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 10:10:46,202] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 10:10:46,204] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 10:10:46,205] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 10:10:46,205] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 10:10:46,208] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 10:10:46,405] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 10:10:46,881] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 10:12:24,461] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 10:12:25,125] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 10:12:25,213] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 10:12:25,215] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 10:12:25,215] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 10:12:25,216] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 10:12:25,218] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 10:12:25,393] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 10:12:25,948] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 10:15:35,641] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 10:15:36,331] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 10:15:36,434] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 10:15:36,436] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 10:15:36,437] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 10:15:36,437] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 10:15:36,440] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 10:15:36,673] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 10:15:37,224] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 11:12:41,097] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 11:12:41,666] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 11:12:41,769] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 11:12:41,772] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 11:12:41,772] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 11:12:41,772] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 11:12:41,775] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 11:12:42,026] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 11:12:42,573] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 11:12:57,335] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 11:12:58,184] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 11:12:58,389] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 11:12:58,400] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 11:12:58,401] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 11:12:58,401] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 11:12:58,405] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 11:12:59,174] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 11:13:00,179] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-09-26 11:17:02,996] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-09-26 11:17:03,742] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-26 11:17:03,996] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2022-09-26 11:17:04,000] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1]
+[2022-09-26 11:17:04,001] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=sa}
+[2022-09-26 11:17:04,001] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2022-09-26 11:17:04,004] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2022-09-26 11:17:04,788] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-09-26 11:17:05,749] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]

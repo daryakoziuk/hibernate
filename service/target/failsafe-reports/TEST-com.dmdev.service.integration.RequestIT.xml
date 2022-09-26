@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.dmdev.service.integration.RequestIT" time="0.182" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/darakozuk/Desktop/hibernate/service/target/test-classes:/Users/darakozuk/Desktop/hibernate/service/target/service-1.0-SNAPSHOT.jar:/Users/darakozuk/Desktop/hibernate/common/target/common-1.0-SNAPSHOT.jar:/Users/darakozuk/.m2/repository/org/postgresql/postgresql/42.5.0/postgresql-42.5.0.jar:/Users/darakozuk/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/Users/darakozuk/.m2/repository/org/slf4j/slf4j-reload4j/1.7.36/slf4j-reload4j-1.7.36.jar:/Users/darakozuk/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/darakozuk/.m2/repository/ch/qos/reload4j/reload4j/1.2.19/reload4j-1.2.19.jar:/Users/darakozuk/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/Users/darakozuk/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/darakozuk/.m2/repository/org/hibernate/hibernate-core/5.6.11.Final/hibernate-core-5.6.11.Final.jar:/Users/darakozuk/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:/Users/darakozuk/.m2/repository/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar:/Users/darakozuk/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/darakozuk/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/darakozuk/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/Users/darakozuk/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/darakozuk/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/darakozuk/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/darakozuk/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/darakozuk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/darakozuk/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/darakozuk/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/darakozuk/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/darakozuk/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/darakozuk/.m2/repository/com/h2database/h2/2.1.210/h2-2.1.210.jar:/Users/darakozuk/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/darakozuk/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/darakozuk/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/darakozuk/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/darakozuk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/darakozuk/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/darakozuk/.m2/repository/org/assertj/assertj-core/3.16.1/assertj-core-3.16.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Minsk"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BY"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.0.4.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/darakozuk/Desktop/hibernate/service/target/surefire/surefirebooter-20220926111701523_3.jar /Users/darakozuk/Desktop/hibernate/service/target/surefire 2022-09-26T11-16-58_641-jvmRun1 surefire-20220926111701523_1tmp surefire_0-20220926111701523_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/darakozuk/Desktop/hibernate/service/target/test-classes:/Users/darakozuk/Desktop/hibernate/service/target/service-1.0-SNAPSHOT.jar:/Users/darakozuk/Desktop/hibernate/common/target/common-1.0-SNAPSHOT.jar:/Users/darakozuk/.m2/repository/org/postgresql/postgresql/42.5.0/postgresql-42.5.0.jar:/Users/darakozuk/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/Users/darakozuk/.m2/repository/org/slf4j/slf4j-reload4j/1.7.36/slf4j-reload4j-1.7.36.jar:/Users/darakozuk/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/darakozuk/.m2/repository/ch/qos/reload4j/reload4j/1.2.19/reload4j-1.2.19.jar:/Users/darakozuk/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/Users/darakozuk/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/darakozuk/.m2/repository/org/hibernate/hibernate-core/5.6.11.Final/hibernate-core-5.6.11.Final.jar:/Users/darakozuk/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:/Users/darakozuk/.m2/repository/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar:/Users/darakozuk/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/darakozuk/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/darakozuk/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/Users/darakozuk/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/darakozuk/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/darakozuk/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/darakozuk/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/darakozuk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/darakozuk/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/darakozuk/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/darakozuk/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/darakozuk/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/darakozuk/.m2/repository/com/h2database/h2/2.1.210/h2-2.1.210.jar:/Users/darakozuk/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/darakozuk/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/darakozuk/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/darakozuk/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/darakozuk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/darakozuk/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/darakozuk/.m2/repository/org/assertj/assertj-core/3.16.1/assertj-core-3.16.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/darakozuk"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.0.4.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/darakozuk/Desktop/hibernate/service"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/darakozuk/Desktop/hibernate/service/target/surefire/surefirebooter-20220926111701523_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="user.name" value="darakozuk"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.3.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="US-ASCII"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/darakozuk/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/vb/5613ngmx7lng76xy9vm86cv00000gn/T/"/>
+    <property name="idea.version" value="2022.1"/>
+    <property name="java.version" value="17.0.4.1"/>
+    <property name="user.dir" value="/Users/darakozuk/Desktop/hibernate/service"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="US-ASCII"/>
+    <property name="java.library.path" value="/Users/darakozuk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="checkGetRequest" classname="com.dmdev.service.integration.RequestIT" time="0.049">
+    <system-out><![CDATA[Hibernate: 
+    drop table if exists roles cascade ; 
+Hibernate: 
+    create table if not exists roles(     id int auto_increment primary key ,     name varchar(128) not null ); 
+Hibernate: 
+    insert 
+    into
+        roles
+        (name) 
+    values
+        ( 'USER' ), (
+            'ADMIN'
+        ); 
+Hibernate: 
+    drop table if exists cars cascade ; 
+Hibernate: 
+    create table if not exists cars(     id int auto_increment primary key ,     model varchar(128) not null,     status varchar(128) not null ); 
+Hibernate: 
+    insert 
+    into
+        cars
+        (model, status) 
+    values
+        ( 'audi', 'FREE' ), (
+            'bmw', 'FREE'
+        ); 
+Hibernate: 
+    drop table if exists users cascade ; 
+Hibernate: 
+    create table if not exists users( id int auto_increment primary key ,     name varchar(128) not null ,     last_name varchar(128) not null ,     role_id int not null references roles(id) 
+        on DELETE cascade 
+                on UPDATE
+                    cascade); 
+Hibernate: 
+    insert 
+    into
+        users
+        (name, last_name, role_id) 
+    values
+        ( 'ira', 'pirogova', 1 ), (
+            'marta', 'mironova', 2
+        ); 
+Hibernate: 
+    drop table if exists requests cascade ; 
+Hibernate: 
+    create table if not exists requests(     id int auto_increment primary key ,     passport varchar(128) not null ,     date_request date not null ,     date_return date not null ,     user_id int references users(id) 
+        on UPDATE
+            cascade                             
+                on DELETE cascade ,
+                car_id int not null references cars (id) 
+                    on DELETE cascade 
+                            on UPDATE
+                                cascade ); 
+Hibernate: 
+    insert 
+    into
+        requests
+        (passport, date_request, date_return, user_id, car_id) 
+    values
+        ( 'KH1234', '2022-5-12', '2022-5-13', 1, 1 ); 
+Hibernate: 
+    select
+        request0_.id as id1_1_0_,
+        request0_.car_id as car_id2_1_0_,
+        request0_.date_request as date_req3_1_0_,
+        request0_.date_return as date_ret4_1_0_,
+        request0_.passport as passport5_1_0_,
+        request0_.user_id as user_id6_1_0_ 
+    from
+        requests request0_ 
+    where
+        request0_.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="checkUpdateRequest" classname="com.dmdev.service.integration.RequestIT" time="0.037">
+    <system-out><![CDATA[Hibernate: 
+    drop table if exists roles cascade ; 
+Hibernate: 
+    create table if not exists roles(     id int auto_increment primary key ,     name varchar(128) not null ); 
+Hibernate: 
+    insert 
+    into
+        roles
+        (name) 
+    values
+        ( 'USER' ), (
+            'ADMIN'
+        ); 
+Hibernate: 
+    drop table if exists cars cascade ; 
+Hibernate: 
+    create table if not exists cars(     id int auto_increment primary key ,     model varchar(128) not null,     status varchar(128) not null ); 
+Hibernate: 
+    insert 
+    into
+        cars
+        (model, status) 
+    values
+        ( 'audi', 'FREE' ), (
+            'bmw', 'FREE'
+        ); 
+Hibernate: 
+    drop table if exists users cascade ; 
+Hibernate: 
+    create table if not exists users( id int auto_increment primary key ,     name varchar(128) not null ,     last_name varchar(128) not null ,     role_id int not null references roles(id) 
+        on DELETE cascade 
+                on UPDATE
+                    cascade); 
+Hibernate: 
+    insert 
+    into
+        users
+        (name, last_name, role_id) 
+    values
+        ( 'ira', 'pirogova', 1 ), (
+            'marta', 'mironova', 2
+        ); 
+Hibernate: 
+    drop table if exists requests cascade ; 
+Hibernate: 
+    create table if not exists requests(     id int auto_increment primary key ,     passport varchar(128) not null ,     date_request date not null ,     date_return date not null ,     user_id int references users(id) 
+        on UPDATE
+            cascade                             
+                on DELETE cascade ,
+                car_id int not null references cars (id) 
+                    on DELETE cascade 
+                            on UPDATE
+                                cascade ); 
+Hibernate: 
+    insert 
+    into
+        requests
+        (passport, date_request, date_return, user_id, car_id) 
+    values
+        ( 'KH1234', '2022-5-12', '2022-5-13', 1, 1 ); 
+Hibernate: 
+    select
+        request0_.id as id1_1_0_,
+        request0_.car_id as car_id2_1_0_,
+        request0_.date_request as date_req3_1_0_,
+        request0_.date_return as date_ret4_1_0_,
+        request0_.passport as passport5_1_0_,
+        request0_.user_id as user_id6_1_0_ 
+    from
+        requests request0_ 
+    where
+        request0_.id=?
+Hibernate: 
+    update
+        requests 
+    set
+        car_id=?,
+        date_request=?,
+        date_return=?,
+        passport=?,
+        user_id=? 
+    where
+        id=?
+]]></system-out>
+  </testcase>
+  <testcase name="checkSaveRequest" classname="com.dmdev.service.integration.RequestIT" time="0.039">
+    <system-out><![CDATA[Hibernate: 
+    drop table if exists roles cascade ; 
+Hibernate: 
+    create table if not exists roles(     id int auto_increment primary key ,     name varchar(128) not null ); 
+Hibernate: 
+    insert 
+    into
+        roles
+        (name) 
+    values
+        ( 'USER' ), (
+            'ADMIN'
+        ); 
+Hibernate: 
+    drop table if exists cars cascade ; 
+Hibernate: 
+    create table if not exists cars(     id int auto_increment primary key ,     model varchar(128) not null,     status varchar(128) not null ); 
+Hibernate: 
+    insert 
+    into
+        cars
+        (model, status) 
+    values
+        ( 'audi', 'FREE' ), (
+            'bmw', 'FREE'
+        ); 
+Hibernate: 
+    drop table if exists users cascade ; 
+Hibernate: 
+    create table if not exists users( id int auto_increment primary key ,     name varchar(128) not null ,     last_name varchar(128) not null ,     role_id int not null references roles(id) 
+        on DELETE cascade 
+                on UPDATE
+                    cascade); 
+Hibernate: 
+    insert 
+    into
+        users
+        (name, last_name, role_id) 
+    values
+        ( 'ira', 'pirogova', 1 ), (
+            'marta', 'mironova', 2
+        ); 
+Hibernate: 
+    drop table if exists requests cascade ; 
+Hibernate: 
+    create table if not exists requests(     id int auto_increment primary key ,     passport varchar(128) not null ,     date_request date not null ,     date_return date not null ,     user_id int references users(id) 
+        on UPDATE
+            cascade                             
+                on DELETE cascade ,
+                car_id int not null references cars (id) 
+                    on DELETE cascade 
+                            on UPDATE
+                                cascade ); 
+Hibernate: 
+    insert 
+    into
+        requests
+        (passport, date_request, date_return, user_id, car_id) 
+    values
+        ( 'KH1234', '2022-5-12', '2022-5-13', 1, 1 ); 
+Hibernate: 
+    insert 
+    into
+        requests
+        (id, car_id, date_request, date_return, passport, user_id) 
+    values
+        (default, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        passport,
+        date_request,
+        date_return,
+        user_id,
+        car_id 
+    from
+        requests
+]]></system-out>
+  </testcase>
+  <testcase name="checkDeleteRequest" classname="com.dmdev.service.integration.RequestIT" time="0.028">
+    <system-out><![CDATA[Hibernate: 
+    drop table if exists roles cascade ; 
+Hibernate: 
+    create table if not exists roles(     id int auto_increment primary key ,     name varchar(128) not null ); 
+Hibernate: 
+    insert 
+    into
+        roles
+        (name) 
+    values
+        ( 'USER' ), (
+            'ADMIN'
+        ); 
+Hibernate: 
+    drop table if exists cars cascade ; 
+Hibernate: 
+    create table if not exists cars(     id int auto_increment primary key ,     model varchar(128) not null,     status varchar(128) not null ); 
+Hibernate: 
+    insert 
+    into
+        cars
+        (model, status) 
+    values
+        ( 'audi', 'FREE' ), (
+            'bmw', 'FREE'
+        ); 
+Hibernate: 
+    drop table if exists users cascade ; 
+Hibernate: 
+    create table if not exists users( id int auto_increment primary key ,     name varchar(128) not null ,     last_name varchar(128) not null ,     role_id int not null references roles(id) 
+        on DELETE cascade 
+                on UPDATE
+                    cascade); 
+Hibernate: 
+    insert 
+    into
+        users
+        (name, last_name, role_id) 
+    values
+        ( 'ira', 'pirogova', 1 ), (
+            'marta', 'mironova', 2
+        ); 
+Hibernate: 
+    drop table if exists requests cascade ; 
+Hibernate: 
+    create table if not exists requests(     id int auto_increment primary key ,     passport varchar(128) not null ,     date_request date not null ,     date_return date not null ,     user_id int references users(id) 
+        on UPDATE
+            cascade                             
+                on DELETE cascade ,
+                car_id int not null references cars (id) 
+                    on DELETE cascade 
+                            on UPDATE
+                                cascade ); 
+Hibernate: 
+    insert 
+    into
+        requests
+        (passport, date_request, date_return, user_id, car_id) 
+    values
+        ( 'KH1234', '2022-5-12', '2022-5-13', 1, 1 ); 
+Hibernate: 
+    select
+        request0_.id as id1_1_0_,
+        request0_.car_id as car_id2_1_0_,
+        request0_.date_request as date_req3_1_0_,
+        request0_.date_return as date_ret4_1_0_,
+        request0_.passport as passport5_1_0_,
+        request0_.user_id as user_id6_1_0_ 
+    from
+        requests request0_ 
+    where
+        request0_.id=?
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    select
+        passport,
+        date_request,
+        date_return,
+        user_id,
+        car_id 
+    from
+        requests
+]]></system-out>
+  </testcase>
+</testsuite>
