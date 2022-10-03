@@ -15,39 +15,37 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
 @ToString(exclude = "requests")
-@EqualsAndHashCode(of = "username")
-@AllArgsConstructor
+@EqualsAndHashCode(of = "tariffType")
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @javax.persistence.Entity
-@Table(name = "users")
-public class User implements BaseEntity<Long> {
+
+public class Tariff implements BaseEntity<Integer> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
-    @Column(unique = true, nullable = false)
-    private String username;
-
-    private PersonalInfo personalInfo;
-
-    @Column(nullable = false)
-    private String password;
-
+    @Column(name = "tariff_type", nullable = false)
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Role role;
+    private TariffType tariffType;
 
-    @OneToMany(
-            mappedBy = "user",
-            cascade = CascadeType.ALL)
+    @Column(scale = 2, nullable = false)
+    private BigDecimal price;
+
+    @OneToMany(mappedBy = "tariff", cascade = CascadeType.ALL)
     @Builder.Default
     private List<Request> requests = new ArrayList<>();
+
+    public BigDecimal getPrice() {
+        return price.setScale(2, RoundingMode.HALF_UP);
+    }
 }

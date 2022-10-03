@@ -1,62 +1,141 @@
 package com.dmdev.service.integration;
 
+import com.dmdev.service.HibernateTestUtil;
 import com.dmdev.service.TestUtil;
+import com.dmdev.service.entity.Car;
+import com.dmdev.service.entity.CarCharacteristic;
 import com.dmdev.service.entity.Request;
-import com.dmdev.service.util.HibernateUtil;
-import org.assertj.core.api.AssertionsForClassTypes;
+import com.dmdev.service.entity.Tariff;
+import com.dmdev.service.entity.User;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
+import static com.dmdev.service.TestUtil.EXAMPLE_DATE_REQUEST;
+import static com.dmdev.service.TestUtil.EXAMPLE_DATE_RETURN;
+import static com.dmdev.service.TestUtil.EXAMPLE_LONG_ID;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RequestIT extends IntegrationTestBase {
-
-    private Session session = HibernateUtil.getSession();
+public class RequestIT {
 
     @Test
     void checkSaveRequest() {
-        session.beginTransaction();
-        session.save(TestUtil.request);
-        List resultList = session.createSQLQuery("select passport, date_request, date_return, user_id, car_id from requests")
-                .getResultList();
-        session.getTransaction().commit();
+        try (Session session = HibernateTestUtil.getSession()) {
+            session.beginTransaction();
+            Tariff tariff = TestUtil.getTariff();
+            session.save(tariff);
+            Car car = TestUtil.getCar();
+            CarCharacteristic carCharacteristic = TestUtil.getCarCharacteristic();
+            carCharacteristic.setCar(car);
+            session.save(car);
+            User user = TestUtil.getUser();
+            session.save(user);
+            Request request = Request.builder()
+                    .dateRequest(EXAMPLE_DATE_REQUEST)
+                    .dateReturn(EXAMPLE_DATE_RETURN)
+                    .build();
+            request.setUser(user);
+            request.setTariff(tariff);
+            request.setCar(car);
 
-        assertThat(resultList).hasSize(2);
+            session.persist(request);
+            session.getTransaction().commit();
+
+            assertThat(request.getId()).isNotNull();
+        }
     }
 
     @Test
     void checkUpdateRequest() {
-        session.beginTransaction();
-        Request request = session.get(Request.class, 1L);
-        request.setCarId(2);
-        session.merge(request);
-        Request updateRequest = session.get(Request.class, 1L);
-        session.getTransaction().commit();
+        try (Session session = HibernateTestUtil.getSession()) {
+            session.beginTransaction();
+            Tariff tariff = TestUtil.getTariff();
+            session.save(tariff);
+            Car car = TestUtil.getCar();
+            CarCharacteristic carCharacteristic = TestUtil.getCarCharacteristic();
+            carCharacteristic.setCar(car);
+            session.save(car);
+            User user = TestUtil.getUser();
+            session.save(user);
+            Request request = Request.builder()
+                    .dateRequest(EXAMPLE_DATE_REQUEST)
+                    .dateReturn(EXAMPLE_DATE_RETURN)
+                    .user(user)
+                    .car(car)
+                    .tariff(tariff)
+                    .build();
+            session.persist(request);
+            Request requestForUpdate = session.get(Request.class, EXAMPLE_LONG_ID);
+            requestForUpdate.setDateReturn(EXAMPLE_DATE_RETURN);
 
-        AssertionsForClassTypes.assertThat(updateRequest.getCarId()).isEqualTo(2);
+            session.update(requestForUpdate);
+            session.flush();
+            session.clear();
+            Request updateRequest = session.get(Request.class, EXAMPLE_LONG_ID);
+            session.getTransaction().commit();
+
+            assertEquals(requestForUpdate.getDateReturn(), updateRequest.getDateReturn());
+        }
     }
 
     @Test
     void checkDeleteRequest() {
-        session.beginTransaction();
-        Request request = session.get(Request.class, 1L);
-        session.delete(request);
-        session.flush();
-        List resultList = session.createSQLQuery("select passport, date_request, date_return, user_id, car_id from requests")
-                .getResultList();
-        session.getTransaction().commit();
+        try (Session session = HibernateTestUtil.getSession()) {
+            session.beginTransaction();
+            Tariff tariff = TestUtil.getTariff();
+            session.save(tariff);
+            Car car = TestUtil.getCar();
+            CarCharacteristic carCharacteristic = TestUtil.getCarCharacteristic();
+            carCharacteristic.setCar(car);
+            session.save(car);
+            User user = TestUtil.getUser();
+            session.save(user);
+            Request request = Request.builder()
+                    .dateRequest(EXAMPLE_DATE_REQUEST)
+                    .dateReturn(EXAMPLE_DATE_RETURN)
+                    .user(user)
+                    .car(car)
+                    .tariff(tariff)
+                    .build();
+            session.persist(request);
+            Request requestForDelete = session.get(Request.class, EXAMPLE_LONG_ID);
 
-        AssertionsForClassTypes.assertThat(resultList.size()).isEqualTo(0);
+            session.delete(requestForDelete);
+            session.flush();
+            session.clear();
+            Request actual = session.get(Request.class, EXAMPLE_LONG_ID);
+            session.getTransaction().commit();
+
+            assertThat(actual).isNull();
+        }
     }
 
     @Test
     void checkGetRequest() {
-        session.beginTransaction();
-        Request request = session.get(Request.class, 1L);
-        session.getTransaction().commit();
+        try (Session session = HibernateTestUtil.getSession()) {
+            session.beginTransaction();
+            Tariff tariff = TestUtil.getTariff();
+            session.save(tariff);
+            Car car = TestUtil.getCar();
+            CarCharacteristic carCharacteristic = TestUtil.getCarCharacteristic();
+            carCharacteristic.setCar(car);
+            session.save(car);
+            User user = TestUtil.getUser();
+            session.save(user);
+            Request request = Request.builder()
+                    .dateRequest(EXAMPLE_DATE_REQUEST)
+                    .dateReturn(EXAMPLE_DATE_RETURN)
+                    .user(user)
+                    .car(car)
+                    .tariff(tariff)
+                    .build();
+            session.persist(request);
 
-        AssertionsForClassTypes.assertThat(request.getId()).isEqualTo(1L);
+            Request request2 = session.get(Request.class, EXAMPLE_LONG_ID);
+            session.getTransaction().commit();
+
+            assertThat(request2.getId()).isNotNull();
+            assertThat(request2.getId()).isEqualTo(EXAMPLE_LONG_ID);
+        }
     }
 }

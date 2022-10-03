@@ -27,7 +27,7 @@ hs_err_pid*
 
 ##############################
 
-target/
+*/target/
 
 pom.xml.tag
 
@@ -60,7 +60,7 @@ buildNumber.properties
 
 bin/
 
-build/
+**/build/
 
 .gradle
 
@@ -78,6 +78,7 @@ gradle-app.setting
 ## IntelliJ
 
 ##############################
+**/target/
 
 out/
 

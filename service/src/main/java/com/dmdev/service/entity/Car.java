@@ -3,25 +3,51 @@ package com.dmdev.service.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.Table;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(of = {"id", "model"})
+@ToString(exclude = "requests")
 @Builder
 @javax.persistence.Entity
-@Table(name = "cars")
-public class Car extends Entity{
+public class Car implements BaseEntity<Long> {
 
-    @Column(name = "model")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @OneToOne(mappedBy = "car",
+            cascade = CascadeType.ALL,
+            optional = false)
+    private CarCharacteristic carCharacteristic;
+
+    @Column(nullable = false)
     private String model;
-    @Column(name = "status")
+
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Status status;
 
+    @OneToMany(
+            mappedBy = "car",
+            cascade = CascadeType.ALL
+    )
+    @Builder.Default
+    private List<Request> requests = new ArrayList<>();
 }

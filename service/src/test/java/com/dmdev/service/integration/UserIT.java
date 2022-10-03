@@ -1,63 +1,76 @@
 package com.dmdev.service.integration;
 
+import com.dmdev.service.HibernateTestUtil;
 import com.dmdev.service.TestUtil;
 import com.dmdev.service.entity.User;
-import com.dmdev.service.util.HibernateUtil;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
+import static com.dmdev.service.TestUtil.EXAMPLE_LONG_ID;
+import static com.dmdev.service.TestUtil.LASTNAME_FOR_UPDATE;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class UserIT extends IntegrationTestBase {
-
-    private Session session = HibernateUtil.getSession();
+public class UserIT {
 
     @Test
     void checkSaveUser() {
-        session.beginTransaction();
-        session.save(TestUtil.user);
-        List<User> resultList = session.createSQLQuery("select u.last_name, u.name, u.role_id from users u").getResultList();
-        session.getTransaction().commit();
+        try (Session session = HibernateTestUtil.getSession()) {
+            session.beginTransaction();
+            User user = TestUtil.getUser();
 
-        assertThat(resultList).hasSize(3);
+            session.save(user);
+            session.getTransaction().commit();
+
+            assertThat(user.getId()).isNotNull();
+        }
     }
 
     @Test
     void checkUpdateUser() {
-        session.beginTransaction();
-        User user = session.get(User.class, 1L);
-        user.setLastname("Irishkova");
+        try (Session session = HibernateTestUtil.getSession()) {
+            session.beginTransaction();
+            session.save(TestUtil.getUser());
+            User user = session.get(User.class, EXAMPLE_LONG_ID);
+            user.getPersonalInfo().setLastname(LASTNAME_FOR_UPDATE);
 
-        session.merge(user);
-        User updateUser = session.get(User.class, 1L);
-        session.getTransaction().commit();
+            session.merge(user);
+            session.flush();
+            session.clear();
+            User actualUser = session.get(User.class, EXAMPLE_LONG_ID);
+            session.getTransaction().commit();
 
-        assertThat(updateUser.getLastname()).isEqualTo("Irishkova");
+            assertEquals(user.getPersonalInfo().getLastname(), actualUser.getPersonalInfo().getLastname());
+        }
     }
 
     @Test
     void checkDeleteUser() {
-        session.beginTransaction();
-        User user = session.get(User.class, 1L);
+        try (Session session = HibernateTestUtil.getSession()) {
+            session.beginTransaction();
+            session.save(TestUtil.getUser());
+            User user = session.get(User.class, EXAMPLE_LONG_ID);
 
-        session.delete(user);
-        session.flush();
-        List resultList = session.createSQLQuery("select u.last_name, u.name, u.role_id from users u")
-                .getResultList();
-        session.getTransaction().commit();
+            session.delete(user);
+            session.flush();
+            User actual = session.get(User.class, EXAMPLE_LONG_ID);
+            session.getTransaction().commit();
 
-        assertThat(resultList).hasSize(1);
+            assertThat(actual).isNull();
+        }
     }
 
     @Test
     void checkGetUser() {
-        session.beginTransaction();
+        try (Session session = HibernateTestUtil.getSession()) {
+            session.beginTransaction();
+            session.save(TestUtil.getUser());
 
-        User user = session.get(User.class, 1L);
-        session.getTransaction().commit();
+            User user = session.get(User.class, EXAMPLE_LONG_ID);
+            session.getTransaction().commit();
 
-        assertThat(user.getId()).isEqualTo(1L);
+            assertThat(user.getId()).isNotNull();
+            assertThat(user.getId()).isEqualTo(EXAMPLE_LONG_ID);
+        }
     }
 }
