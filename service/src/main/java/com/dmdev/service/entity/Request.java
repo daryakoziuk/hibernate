@@ -4,27 +4,58 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.Column;
-import javax.persistence.Table;
-import java.time.LocalDate;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import java.time.LocalDateTime;
 
 @Data
+@ToString(exclude = {"car", "user", "tariff"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @javax.persistence.Entity
-@Table(name = "requests")
-public class Request extends Entity{
+public class Request implements BaseEntity<Long> {
 
-    @Column(name = "passport")
-    private String passport;
-    @Column(name = "date_request")
-    private LocalDate dateRequest;
-    @Column(name = "date_return")
-    private LocalDate dateReturn;
-    @Column(name = "user_id")
-    private Integer userId;
-    @Column(name = "car_id")
-    private Integer carId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false)
+    private LocalDateTime dateRequest;
+
+    @Column(nullable = false)
+    private LocalDateTime dateReturn;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "tariff_id")
+    private Tariff tariff;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "car_id")
+    private Car car;
+
+    public void setTariff(Tariff tariff) {
+        this.tariff = tariff;
+        tariff.getRequests().add(this);
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+        car.getRequests().add(this);
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+        user.getRequests().add(this);
+    }
 }
