@@ -9,6 +9,7 @@ import lombok.ToString;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
@@ -22,11 +23,11 @@ import java.util.List;
 
 @Data
 @ToString(exclude = "requests")
-@EqualsAndHashCode(of = "tariffType")
+@EqualsAndHashCode(of = {"type", "price"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@javax.persistence.Entity
+@Entity
 
 public class Tariff implements BaseEntity<Integer> {
 
@@ -36,7 +37,7 @@ public class Tariff implements BaseEntity<Integer> {
 
     @Column(name = "tariff_type", nullable = false)
     @Enumerated(EnumType.STRING)
-    private TariffType tariffType;
+    private TariffType type;
 
     @Column(scale = 2, nullable = false)
     private BigDecimal price;

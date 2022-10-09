@@ -15,6 +15,7 @@
 *.nar
 *.idea
 *.log
+*.iml
 
 hs_err_pid*
 
@@ -78,7 +79,7 @@ gradle-app.setting
 ## IntelliJ
 
 ##############################
-**/target/
+*/target
 
 out/
 

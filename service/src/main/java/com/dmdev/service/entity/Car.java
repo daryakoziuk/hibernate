@@ -9,6 +9,7 @@ import lombok.ToString;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
@@ -22,19 +23,17 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = {"id", "model"})
+@EqualsAndHashCode(of = {"model", "status"})
 @ToString(exclude = "requests")
 @Builder
-@javax.persistence.Entity
+@Entity
 public class Car implements BaseEntity<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne(mappedBy = "car",
-            cascade = CascadeType.ALL,
-            optional = false)
+    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL, optional = false)
     private CarCharacteristic carCharacteristic;
 
     @Column(nullable = false)

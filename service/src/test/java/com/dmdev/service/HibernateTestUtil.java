@@ -2,7 +2,6 @@ package com.dmdev.service;
 
 import com.dmdev.service.util.HibernateUtil;
 import lombok.experimental.UtilityClass;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.testcontainers.containers.PostgreSQLContainer;
@@ -26,7 +25,4 @@ public class HibernateTestUtil {
         return configuration.buildSessionFactory();
     }
 
-    public static Session getSession() {
-        return buildSessionFactory().getCurrentSession();
-    }
 }

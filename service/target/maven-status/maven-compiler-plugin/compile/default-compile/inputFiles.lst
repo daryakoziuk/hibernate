@@ -1,0 +1,17 @@
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/CarCharacteristic.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/Tariff.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/TypeFuel.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/QPredicate.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/Car.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/dto/FilterCar.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/Status.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/util/HibernateUtil.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/Role.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/PersonalInfo.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/Predicate_.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/TypeTransmission.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/User.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/Request.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/dto/FilterUser.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/TariffType.java
+/Users/darakozuk/Desktop/hibernate/service/src/main/java/com/dmdev/service/entity/BaseEntity.java
