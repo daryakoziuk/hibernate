@@ -13,7 +13,7 @@
 *.ear
 
 *.nar
-*.idea
+*/.idea
 *.log
 *.iml
 
@@ -83,7 +83,7 @@ gradle-app.setting
 
 out/
 
-.idea/
+ */.idea/
 
 .idea_modules/
 
