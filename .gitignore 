@@ -11,9 +11,8 @@
 *.war
 
 *.ear
-
 *.nar
-*/.idea
+.idea
 *.log
 *.iml
 
@@ -28,7 +27,7 @@ hs_err_pid*
 
 ##############################
 
-*/target/
+*/target/*
 
 pom.xml.tag
 
@@ -83,7 +82,7 @@ gradle-app.setting
 
 out/
 
- */.idea/
+ *.idea
 
 .idea_modules/
 
