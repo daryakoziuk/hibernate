@@ -3,23 +3,30 @@ package com.dmdev.service.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedAttributeNode;
+import javax.persistence.NamedEntityGraph;
 import java.time.LocalDateTime;
 
+@NamedEntityGraph(name = "withUser", attributeNodes = {@NamedAttributeNode("user")})
 @Data
 @ToString(exclude = {"car", "user", "tariff"})
+@EqualsAndHashCode(of = {"dateRequest", "dateReturn"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@javax.persistence.Entity
+@Entity
 public class Request implements BaseEntity<Long> {
 
     @Id
@@ -32,15 +39,15 @@ public class Request implements BaseEntity<Long> {
     @Column(nullable = false)
     private LocalDateTime dateReturn;
 
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "tariff_id")
     private Tariff tariff;
 
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "car_id")
     private Car car;
 

@@ -16,7 +16,7 @@ CREATE TABLE rent_auto.car(
 
 CREATE TABLE rent_auto.tariff(
                                  id SERIAL PRIMARY KEY ,
-                                 tariff_type VARCHAR(64),
+                                 type VARCHAR(64),
                                  price DECIMAL(3,2)
 );
 
@@ -32,10 +32,13 @@ CREATE TABLE rent_auto.request(
 
 CREATE TABLE rent_auto.car_characteristic(
                                              id SERIAL PRIMARY KEY ,
-                                             car_id INT NOT NULL REFERENCES rent_auto.car(id) ON UPDATE CASCADE ON DELETE CASCADE ,
+                                             car_id INT NOT NULL UNIQUE REFERENCES rent_auto.car(id) ON UPDATE CASCADE ON DELETE CASCADE ,
                                              engine_volume INT NOT NULL ,
-                                             type_fuel VARCHAR(64) NOT NULL
-)
+                                             type VARCHAR(64) NOT NULL,
+                                             transmission VARCHAR(64) NOT NULL,
+                                             date_release DATE NOT NULL
+
+);
 
 
 
