@@ -1,7 +1,7 @@
 package com.dmdev.service.integration;
 
 import com.dmdev.service.HibernateTestUtil;
-import com.dmdev.service.TestUtil;
+import com.dmdev.service.TestDatabaseImporter;
 import com.dmdev.service.entity.Tariff;
 import lombok.Cleanup;
 import org.hibernate.Session;
@@ -9,25 +9,23 @@ import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
-import static com.dmdev.service.TestUtil.EXAMPLE_INTEGER_ID;
-import static com.dmdev.service.TestUtil.PRICE_FOR_CHANGE;
+import static com.dmdev.service.TestDatabaseImporter.EXAMPLE_INTEGER_ID;
+import static com.dmdev.service.TestDatabaseImporter.PRICE_FOR_CHANGE;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TariffIT {
 
-    private final SessionFactory sessionFactory = HibernateTestUtil.buildSessionFactory();
+    private static final SessionFactory sessionFactory = HibernateTestUtil.buildSessionFactory();
 
     @BeforeAll
-    void initDb() {
-        TestUtil.createDatabase(sessionFactory);
+    static void initDb() {
+        TestDatabaseImporter.insertDatabase(sessionFactory);
     }
 
     @AfterAll
-    void close() {
+    static void close() {
         sessionFactory.close();
     }
 
@@ -35,7 +33,7 @@ public class TariffIT {
     void checkSaveTariff() {
         @Cleanup Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Tariff tariff = TestUtil.getTariff();
+        Tariff tariff = TestDatabaseImporter.getTariff();
 
         session.save(tariff);
 

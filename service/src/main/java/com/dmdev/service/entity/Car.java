@@ -24,7 +24,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = {"model", "status"})
-@ToString(exclude = "requests")
+@ToString(exclude = {"requests", "carCharacteristic"})
 @Builder
 @Entity
 public class Car implements BaseEntity<Long> {

@@ -22,10 +22,35 @@
         <mockito.version>4.2.0</mockito.version>
         <lombok.version>1.18.22</lombok.version>
         <querydsl.version>5.0.0</querydsl.version>
+        <hibernate.version>5.6.11.Final</hibernate.version>
+        <javax.persistence.api.version>2.2</javax.persistence.api.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.querydsl</groupId>
+                <artifactId>querydsl-jpa</artifactId>
+                <version>${querydsl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-reload4j</artifactId>
+                <version>1.7.36</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>42.5.0</version>
+                <scope>runtime</scope>
+            </dependency>
+
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-jpamodelgen</artifactId>
@@ -40,34 +65,10 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.querydsl</groupId>
-                <artifactId>querydsl-jpa</artifactId>
-                <version>${querydsl.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.postgresql</groupId>
-                <artifactId>postgresql</artifactId>
-                <version>42.5.0</version>
-                <scope>runtime</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-reload4j</artifactId>
-                <version>1.7.36</version>
-            </dependency>
-
-            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-core</artifactId>
-                <version>5.6.11.Final</version>
             </dependency>
 
             <dependency>
@@ -76,7 +77,6 @@
                 <version>1.17.3</version>
                 <scope>test</scope>
             </dependency>
-
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-engine</artifactId>
@@ -124,12 +124,12 @@
                             <path>
                                 <groupId>org.hibernate</groupId>
                                 <artifactId>hibernate-jpamodelgen</artifactId>
-                                <version>5.6.11.Final</version>
+                                <version>${hibernate.version}</version>
                             </path>
                             <path>
                                 <groupId>javax.persistence</groupId>
                                 <artifactId>javax.persistence-api</artifactId>
-                                <version>2.2</version>
+                                <version>${javax.persistence.api.version}</version>
                             </path>
                         </annotationProcessorPaths>
                     </configuration>
@@ -146,19 +146,17 @@
                             </goals>
                             <configuration>
                                 <targetFolder>target/generated-sources</targetFolder>
-                                <!-- You have to pass your entity package here -->
                                 <packages>
                                     <package>com.dmdev.service.entity</package>
                                 </packages>
                             </configuration>
                         </execution>
                     </executions>
-                    <!-- querydsl plugin does not contain javax lib for generating jpa model -->
                     <dependencies>
                         <dependency>
                             <groupId>javax.persistence</groupId>
                             <artifactId>javax.persistence-api</artifactId>
-                            <version>2.2</version>
+                            <version>${javax.persistence.api.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>

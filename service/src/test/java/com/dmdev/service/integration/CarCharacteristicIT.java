@@ -1,7 +1,7 @@
 package com.dmdev.service.integration;
 
 import com.dmdev.service.HibernateTestUtil;
-import com.dmdev.service.TestUtil;
+import com.dmdev.service.TestDatabaseImporter;
 import com.dmdev.service.entity.Car;
 import com.dmdev.service.entity.CarCharacteristic;
 import com.dmdev.service.entity.TypeFuel;
@@ -11,25 +11,23 @@ import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
-import static com.dmdev.service.TestUtil.EXAMPLE_INTEGER_ID;
-import static com.dmdev.service.TestUtil.EXAMPLE_LONG_ID;
+import static com.dmdev.service.TestDatabaseImporter.EXAMPLE_INTEGER_ID;
+import static com.dmdev.service.TestDatabaseImporter.EXAMPLE_LONG_ID;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class CarCharacteristicIT {
 
-    private final SessionFactory sessionFactory = HibernateTestUtil.buildSessionFactory();
+    private static final SessionFactory sessionFactory = HibernateTestUtil.buildSessionFactory();
 
     @BeforeAll
-    void initDb() {
-        TestUtil.createDatabase(sessionFactory);
+    static void initDb() {
+        TestDatabaseImporter.insertDatabase(sessionFactory);
     }
 
     @AfterAll
-    void close() {
+    static void close() {
         sessionFactory.close();
     }
 
@@ -37,8 +35,8 @@ public class CarCharacteristicIT {
     void checkSaveCarCharacteristic() {
         @Cleanup Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Car car = TestUtil.getCar();
-        CarCharacteristic carCharacteristic = TestUtil.getCarCharacteristic();
+        Car car = TestDatabaseImporter.getCar();
+        CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
         carCharacteristic.setCar(car);
         session.save(car);
 

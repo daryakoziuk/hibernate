@@ -23,15 +23,15 @@ import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
-@NamedEntityGraph(name = "withRequestAndCar",
-        attributeNodes = @NamedAttributeNode(value = "requests", subgraph = "car"),
-        subgraphs = @NamedSubgraph(name = "car", attributeNodes = @NamedAttributeNode("car")))
 @Data
 @ToString(exclude = "requests")
 @EqualsAndHashCode(exclude = {"id", "requests"})
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@NamedEntityGraph(name = "withRequestAndCar",
+        attributeNodes = @NamedAttributeNode(value = "requests", subgraph = "car"),
+        subgraphs = @NamedSubgraph(name = "car", attributeNodes = @NamedAttributeNode("car")))
 @Entity
 @Table(name = "users")
 public class User implements BaseEntity<Long> {
