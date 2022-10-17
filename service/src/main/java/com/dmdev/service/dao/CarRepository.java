@@ -1,7 +1,7 @@
 package com.dmdev.service.dao;
 
 import com.dmdev.service.dto.FilterCar;
-import com.dmdev.service.dto.predicate.QPredicateCar;
+import com.dmdev.service.dto.predicate.CarPredicate;
 import com.dmdev.service.entity.Car;
 import com.dmdev.service.entity.Status;
 import com.querydsl.jpa.impl.JPAQuery;
@@ -14,7 +14,7 @@ import static com.dmdev.service.entity.QCarCharacteristic.carCharacteristic;
 
 public class CarRepository extends BaseRepository<Long, Car> {
 
-    private QPredicateCar predicateCar;
+    private CarPredicate carPredicate = new CarPredicate();
 
     public CarRepository(EntityManager entityManager) {
         super(entityManager, Car.class);
@@ -25,7 +25,7 @@ public class CarRepository extends BaseRepository<Long, Car> {
                 .select(car)
                 .from(car)
                 .join(car.carCharacteristic, carCharacteristic)
-                .where(predicateCar.builder(filterCar))
+                .where(carPredicate.builder(filterCar))
                 .fetch();
     }
 

@@ -25,7 +25,7 @@ public abstract class BaseRepository<K extends Serializable, E extends BaseEntit
 
     @Override
     public void delete(K id) {
-        entityManager.remove(id);
+        entityManager.remove(entityManager.find(clazz, id));
         entityManager.flush();
     }
 
@@ -42,6 +42,7 @@ public abstract class BaseRepository<K extends Serializable, E extends BaseEntit
     @Override
     public List<E> findAll() {
         CriteriaQuery<E> criteria = entityManager.getCriteriaBuilder().createQuery(clazz);
+        criteria.from(clazz);
         return entityManager.createQuery(criteria).getResultList();
     }
 }

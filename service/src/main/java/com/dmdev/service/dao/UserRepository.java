@@ -1,7 +1,7 @@
 package com.dmdev.service.dao;
 
 import com.dmdev.service.dto.FilterUser;
-import com.dmdev.service.dto.predicate.QPredicateUser;
+import com.dmdev.service.dto.predicate.UserPredicate;
 import com.dmdev.service.entity.User;
 import com.querydsl.jpa.impl.JPAQuery;
 
@@ -13,7 +13,7 @@ import static com.dmdev.service.entity.QUser.user;
 
 public class UserRepository extends BaseRepository<Long, User> {
 
-    private QPredicateUser predicateUser;
+    private UserPredicate userPredicate = new UserPredicate();
 
     public UserRepository(EntityManager entityManager) {
         super(entityManager, User.class);
@@ -23,7 +23,7 @@ public class UserRepository extends BaseRepository<Long, User> {
         return new JPAQuery<User>(getEntityManager())
                 .select(user)
                 .from(user)
-                .where(predicateUser.builder(filterUser))
+                .where(userPredicate.builder(filterUser))
                 .fetch();
     }
 

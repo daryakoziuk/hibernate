@@ -11,7 +11,6 @@ import com.dmdev.service.entity.TariffType;
 import com.dmdev.service.entity.TypeFuel;
 import com.dmdev.service.entity.TypeTransmission;
 import com.dmdev.service.entity.User;
-import lombok.Cleanup;
 import lombok.experimental.UtilityClass;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -23,8 +22,6 @@ import java.time.LocalDateTime;
 @UtilityClass
 public class TestDatabaseImporter {
 
-    public static final Long EXAMPLE_LONG_ID = 1L;
-    public static final Integer EXAMPLE_INTEGER_ID = 1;
     public static final LocalDateTime DATE_REQUEST = LocalDateTime
             .of(2012, 12, 12, 12, 12);
     public static final LocalDateTime DATE_RETURN = LocalDateTime
@@ -33,9 +30,9 @@ public class TestDatabaseImporter {
     public static final String LASTNAME_FOR_UPDATE = "Irishkova";
 
     public static void insertDatabase(SessionFactory sessionFactory) {
-        @Cleanup Session session = sessionFactory.openSession();
-
+        Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
+
         Tariff hourlyTariff = saveTariff(session, TariffType.HOURLY, new BigDecimal(12));
         Tariff dailyTariff = saveTariff(session, TariffType.DAYTIME, new BigDecimal(23));
 
@@ -84,6 +81,13 @@ public class TestDatabaseImporter {
                 .type(TypeFuel.DIESEL)
                 .transmission(TypeTransmission.MANUAL)
                 .dateRelease(LocalDate.of(2002, 1, 1))
+                .build();
+    }
+
+    public static Tariff getTariff() {
+        return Tariff.builder()
+                .price(new BigDecimal(12))
+                .type(TariffType.HOURLY)
                 .build();
     }
 
@@ -151,12 +155,5 @@ public class TestDatabaseImporter {
                 .dateRequest(dateRequest)
                 .build();
         session.save(request);
-    }
-
-    public static Tariff getTariff() {
-        return Tariff.builder()
-                .price(new BigDecimal(12))
-                .type(TariffType.HOURLY)
-                .build();
     }
 }
