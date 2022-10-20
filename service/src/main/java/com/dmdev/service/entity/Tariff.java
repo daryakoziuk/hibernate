@@ -28,7 +28,6 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
-
 public class Tariff implements BaseEntity<Integer> {
 
     @Id

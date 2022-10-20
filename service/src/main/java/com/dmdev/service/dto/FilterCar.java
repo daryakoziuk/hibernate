@@ -6,12 +6,13 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @Builder
 public class FilterCar {
 
-    private String model;
+    private List<String>model;
     private Integer engineVolume;
     private TypeTransmission transmission;
     private TypeFuel type;

@@ -1,4 +1,4 @@
-package com.dmdev.service.integration;
+package com.dmdev.service.dao;
 
 import com.dmdev.service.HibernateTestUtil;
 import com.dmdev.service.TestDatabaseImporter;
@@ -11,12 +11,17 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CarCharacteristicIT {
+public class CarCharacteristicRepositoryIT {
 
     private static final SessionFactory sessionFactory = HibernateTestUtil.buildSessionFactory();
+    private final CarCharacteristicRepository carCharacteristicRepository = new CarCharacteristicRepository(sessionFactory.getCurrentSession());
+    private final CarRepository carRepository = new CarRepository(sessionFactory.getCurrentSession());
 
     @BeforeAll
     static void initDb() {
@@ -34,11 +39,11 @@ public class CarCharacteristicIT {
         session.beginTransaction();
         Car car = TestDatabaseImporter.getCar();
         CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
-        carCharacteristic.setCar(car);
-        session.save(car);
+        car.setCarCharacteristic(carCharacteristic);
+        carRepository.save(car);
+        session.clear();
 
-        assertThat(car.getId()).isNotNull();
-
+        assertThat(carCharacteristic.getId()).isNotNull();
         session.getTransaction().rollback();
     }
 
@@ -48,18 +53,18 @@ public class CarCharacteristicIT {
         session.beginTransaction();
         Car car = TestDatabaseImporter.getCar();
         CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
-        carCharacteristic.setCar(car);
-        session.save(car);
+        car.setCarCharacteristic(carCharacteristic);
+        carRepository.save(car);
         session.clear();
-        CarCharacteristic carCharacteristic2 = session.find(CarCharacteristic.class, carCharacteristic.getId());
-        carCharacteristic2.setType(TypeFuel.PETROL);
+        CarCharacteristic update = session.find(CarCharacteristic.class, carCharacteristic.getId());
+        update.setType(TypeFuel.PETROL);
 
-        session.merge(carCharacteristic2);
+        carCharacteristicRepository.update(update);
         session.flush();
         session.clear();
-        CarCharacteristic actual = session.get(CarCharacteristic.class, carCharacteristic2.getId());
+        CarCharacteristic actual = session.find(CarCharacteristic.class, carCharacteristic.getId());
 
-        assertEquals(carCharacteristic2.getType(), actual.getType());
+        assertEquals(update.getType(), actual.getType());
         session.getTransaction().rollback();
     }
 
@@ -69,32 +74,41 @@ public class CarCharacteristicIT {
         session.beginTransaction();
         Car car = TestDatabaseImporter.getCar();
         CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
-        carCharacteristic.setCar(car);
-        session.save(car);
+        car.setCarCharacteristic(carCharacteristic);
+        carRepository.save(car);
         session.clear();
 
-        session.delete(carCharacteristic);
-        session.flush();
-        var actual = session.get(CarCharacteristic.class, carCharacteristic.getId());
+        carCharacteristicRepository.delete(carCharacteristic.getId());
+        var actual = session.find(CarCharacteristic.class, carCharacteristic.getId());
 
         assertThat(actual).isNull();
         session.getTransaction().rollback();
     }
 
     @Test
-    void checkGetCarCharacteristic() {
+    void checkFindCarCharacteristicById() {
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         Car car = TestDatabaseImporter.getCar();
         CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
-        carCharacteristic.setCar(car);
-        session.save(car);
+        car.setCarCharacteristic(carCharacteristic);
+        carRepository.save(car);
         session.clear();
 
-        CarCharacteristic actual = session.get(CarCharacteristic.class, carCharacteristic.getId());
+        Optional<CarCharacteristic> mayBeCharacteristic = carCharacteristicRepository.findById(carCharacteristic.getId());
 
-        assertThat(actual.getId()).isNotNull();
+        assertThat(mayBeCharacteristic.get().getId()).isNotNull();
+        session.getTransaction().rollback();
+    }
+
+    @Test
+    void checkFindAll() {
+        Session session = sessionFactory.getCurrentSession();
+        session.beginTransaction();
+
+        List<CarCharacteristic> characteristics = carCharacteristicRepository.findAll();
+
+        assertThat(characteristics).hasSize(2);
         session.getTransaction().rollback();
     }
 }
-

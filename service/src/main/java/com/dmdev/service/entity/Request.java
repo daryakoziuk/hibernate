@@ -19,13 +19,13 @@ import javax.persistence.NamedAttributeNode;
 import javax.persistence.NamedEntityGraph;
 import java.time.LocalDateTime;
 
-@NamedEntityGraph(name = "withUser", attributeNodes = {@NamedAttributeNode("user")})
 @Data
 @ToString(exclude = {"car", "user", "tariff"})
 @EqualsAndHashCode(of = {"dateRequest", "dateReturn"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@NamedEntityGraph(name = "withUser", attributeNodes = {@NamedAttributeNode("user")})
 @Entity
 public class Request implements BaseEntity<Long> {
 

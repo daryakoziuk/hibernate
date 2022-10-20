@@ -1,22 +1,25 @@
-package com.dmdev.service.integration;
+package com.dmdev.service.dao;
 
 import com.dmdev.service.HibernateTestUtil;
 import com.dmdev.service.TestDatabaseImporter;
 import com.dmdev.service.entity.Tariff;
-import lombok.Cleanup;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.dmdev.service.TestDatabaseImporter.PRICE_FOR_CHANGE;
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TariffIT {
+public class TariffRepositoryIT {
 
     private static final SessionFactory sessionFactory = HibernateTestUtil.buildSessionFactory();
+    private final TariffRepository tariffRepository = new TariffRepository(sessionFactory.getCurrentSession());
 
     @BeforeAll
     static void initDb() {
@@ -30,13 +33,13 @@ public class TariffIT {
 
     @Test
     void checkSaveTariff() {
-        @Cleanup Session session = sessionFactory.openSession();
+        Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         Tariff tariff = TestDatabaseImporter.getTariff();
 
-        session.save(tariff);
+        Tariff saveTariff = tariffRepository.save(tariff);
 
-        assertThat(tariff.getId()).isNotNull();
+        assertThat(saveTariff.getId()).isNotNull();
         session.getTransaction().rollback();
     }
 
@@ -45,16 +48,15 @@ public class TariffIT {
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         Tariff tariff = TestDatabaseImporter.getTariff();
-        session.save(tariff);
-        Tariff forUpdate = session.find(Tariff.class, tariff.getId());
-        forUpdate.setPrice(PRICE_FOR_CHANGE);
+        tariffRepository.save(tariff);
+        tariff.setPrice(new BigDecimal(15));
 
-        session.merge(forUpdate);
+        tariffRepository.update(tariff);
         session.flush();
         session.clear();
-        Tariff actualTariff = session.find(Tariff.class, forUpdate.getId());
+        Tariff actualTariff = session.find(Tariff.class, tariff.getId());
 
-        assertEquals(forUpdate.getPrice(), actualTariff.getPrice());
+        assertEquals(tariff.getPrice(), actualTariff.getPrice());
         session.getTransaction().rollback();
     }
 
@@ -63,27 +65,41 @@ public class TariffIT {
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         Tariff tariff = TestDatabaseImporter.getTariff();
-        session.save(tariff);
-
-        session.delete(tariff);
+        tariffRepository.save(tariff);
         session.flush();
-        Tariff actual = session.get(Tariff.class, tariff.getId());
+        session.clear();
+
+        tariffRepository.delete(tariff.getId());
+        session.flush();
+        Tariff actual = session.find(Tariff.class, tariff.getId());
 
         assertThat(actual).isNull();
         session.getTransaction().rollback();
     }
 
     @Test
-    void checkGetTariff() {
+    void checkFindTariffById() {
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         Tariff tariff = TestDatabaseImporter.getTariff();
-        session.save(tariff);
-        session.clear();
+        tariffRepository.save(tariff);
 
-        Tariff actual = session.find(Tariff.class, tariff.getId());
+        Optional<Tariff> mayBeTariff = tariffRepository.findById(tariff.getId());
 
-        assertThat(actual.getId()).isNotNull();
+        assertThat(mayBeTariff).isPresent();
+        assertEquals(tariff.getId(), mayBeTariff.get().getId());
+        session.getTransaction().rollback();
+    }
+
+    @Test
+    void checkFindAll() {
+        Session session = sessionFactory.getCurrentSession();
+        session.beginTransaction();
+
+        List<Tariff> tariffs = tariffRepository.findAll();
+
+        assertThat(tariffs).hasSize(2);
         session.getTransaction().rollback();
     }
 }
+

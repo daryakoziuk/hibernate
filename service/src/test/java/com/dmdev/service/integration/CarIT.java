@@ -1,22 +1,20 @@
 package com.dmdev.service.integration;
 
 import com.dmdev.service.HibernateTestUtil;
-import com.dmdev.service.QPredicate;
-import com.dmdev.service.TestUtil;
+import com.dmdev.service.TestDatabaseImporter;
 import com.dmdev.service.dto.FilterCar;
+import com.dmdev.service.dto.predicate.QPredicate;
 import com.dmdev.service.entity.Car;
 import com.dmdev.service.entity.CarCharacteristic;
 import com.dmdev.service.entity.Request;
 import com.dmdev.service.entity.Status;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.jpa.impl.JPAQuery;
-import lombok.Cleanup;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -25,33 +23,33 @@ import static com.dmdev.service.entity.QCar.car;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class CarIT {
 
-    private final SessionFactory sessionFactory = HibernateTestUtil.buildSessionFactory();
+    private static final SessionFactory sessionFactory = HibernateTestUtil.buildSessionFactory();
 
     @BeforeAll
-    void initDb() {
-        TestUtil.createDatabase(sessionFactory);
+    static void initDb() {
+        TestDatabaseImporter.insertDatabase(sessionFactory);
     }
 
     @AfterAll
-    void close() {
+    static void close() {
         sessionFactory.close();
     }
 
     @Test
-    void checkQuerydsl(){
-        @Cleanup Session session = sessionFactory.openSession();
+    void checkQuerydslWithFilter() {
+        Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         FilterCar filterCar = FilterCar.builder()
-                .model("BMW")
-                .dateRelease(LocalDate.of(2012,01,01))
+                .model(List.of("BMW", "Audi"))
+                .dateRelease(LocalDate.of(2012, 1, 1))
                 .build();
         Predicate predicate = QPredicate.builder()
                 .add(filterCar.getDateRelease(), car.carCharacteristic.dateRelease::eq)
-                .add(filterCar.getModel(), car.model::eq)
+                .add(filterCar.getModel(), car.model::in)
                 .buildAll();
+
         List<Car> cars = new JPAQuery<Request>(session)
                 .select(car)
                 .from(car)
@@ -64,10 +62,10 @@ public class CarIT {
 
     @Test
     void checkSaveCar() {
-        @Cleanup Session session = sessionFactory.openSession();
+        Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        Car car = TestUtil.getCar();
-        CarCharacteristic carCharacteristic = TestUtil.getCarCharacteristic();
+        Car car = TestDatabaseImporter.getCar();
+        CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
         carCharacteristic.setCar(car);
 
         session.save(car);
@@ -78,29 +76,38 @@ public class CarIT {
 
     @Test
     void checkUpdateCar() {
-        @Cleanup Session session = sessionFactory.openSession();
+        Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        Car car = session.get(Car.class, 1L);
-        car.setStatus(Status.USED);
+        Car car = TestDatabaseImporter.getCar();
+        CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
+        carCharacteristic.setCar(car);
+        session.save(car);
+        session.clear();
+        Car carUpdate = session.find(Car.class, car.getId());
+        carUpdate.setStatus(Status.USED);
 
         session.merge(car);
         session.flush();
         session.clear();
-        Car actual = session.get(Car.class, car.getId());
+        Car actual = session.find(Car.class, car.getId());
 
-        assertEquals(car.getStatus(), actual.getStatus());
+        assertEquals(carUpdate.getStatus(), actual.getStatus());
         session.getTransaction().rollback();
     }
 
     @Test
     void checkDeleteCar() {
-        @Cleanup Session session = sessionFactory.openSession();
+        Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        Car carForDelete = session.get(Car.class, 1L);
+        Car car = TestDatabaseImporter.getCar();
+        CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
+        carCharacteristic.setCar(car);
+        session.save(car);
+        session.clear();
 
-        session.delete(carForDelete);
+        session.delete(car);
         session.flush();
-        Car actual = session.get(Car.class, carForDelete.getId());
+        Car actual = session.get(Car.class, car.getId());
 
         assertThat(actual).isNull();
         session.getTransaction().rollback();
@@ -108,12 +115,17 @@ public class CarIT {
 
     @Test
     void checkGetCar() {
-        @Cleanup Session session = sessionFactory.openSession();
+        Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
+        Car car = TestDatabaseImporter.getCar();
+        CarCharacteristic carCharacteristic = TestDatabaseImporter.getCarCharacteristic();
+        carCharacteristic.setCar(car);
+        session.save(car);
+        session.clear();
 
-        Car car = session.get(Car.class, 1L);
+        Car actual = session.find(Car.class, car.getId());
 
-        assertThat(car.getId()).isNotNull();
+        assertThat(actual.getId()).isNotNull();
         session.getTransaction().rollback();
     }
 }

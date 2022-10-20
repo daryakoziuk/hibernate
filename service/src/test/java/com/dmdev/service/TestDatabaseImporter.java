@@ -11,7 +11,6 @@ import com.dmdev.service.entity.TariffType;
 import com.dmdev.service.entity.TypeFuel;
 import com.dmdev.service.entity.TypeTransmission;
 import com.dmdev.service.entity.User;
-import lombok.Cleanup;
 import lombok.experimental.UtilityClass;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -21,10 +20,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @UtilityClass
-public class TestUtil {
+public class TestDatabaseImporter {
 
-    public static final Long EXAMPLE_LONG_ID = 1L;
-    public static final Integer EXAMPLE_INTEGER_ID = 1;
     public static final LocalDateTime DATE_REQUEST = LocalDateTime
             .of(2012, 12, 12, 12, 12);
     public static final LocalDateTime DATE_RETURN = LocalDateTime
@@ -32,17 +29,17 @@ public class TestUtil {
     public static final BigDecimal PRICE_FOR_CHANGE = new BigDecimal(40);
     public static final String LASTNAME_FOR_UPDATE = "Irishkova";
 
-    public static void createDatabase(SessionFactory sessionFactory){
-        @Cleanup Session session = sessionFactory.openSession();
-
+    public static void insertDatabase(SessionFactory sessionFactory) {
+        Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
+
         Tariff hourlyTariff = saveTariff(session, TariffType.HOURLY, new BigDecimal(12));
         Tariff dailyTariff = saveTariff(session, TariffType.DAYTIME, new BigDecimal(23));
 
         CarCharacteristic characteristicAudi = saveCarCharacteristic(session, 1900,
-                TypeFuel.DIESEL, TypeTransmission.MANUAL, LocalDate.of(2010,01,01));
+                TypeFuel.DIESEL, TypeTransmission.MANUAL, LocalDate.of(2010, 1, 1));
         CarCharacteristic characteristicBmw = saveCarCharacteristic(session, 3200,
-                TypeFuel.PETROL, TypeTransmission.AUTOMATIC, LocalDate.of(2012,01,01));
+                TypeFuel.PETROL, TypeTransmission.AUTOMATIC, LocalDate.of(2012, 1, 1));
 
         Car audi = saveCar(session, "Audi", Status.FREE, characteristicAudi);
         Car bmw = saveCar(session, "BMW", Status.FREE, characteristicBmw);
@@ -83,12 +80,18 @@ public class TestUtil {
                 .engineVolume(2100)
                 .type(TypeFuel.DIESEL)
                 .transmission(TypeTransmission.MANUAL)
-                .dateRelease(LocalDate.of(2002,01,01))
+                .dateRelease(LocalDate.of(2002, 1, 1))
                 .build();
     }
 
+    public static Tariff getTariff() {
+        return Tariff.builder()
+                .price(new BigDecimal(12))
+                .type(TariffType.HOURLY)
+                .build();
+    }
 
-    private Tariff saveTariff(Session session, TariffType type, BigDecimal price){
+    private Tariff saveTariff(Session session, TariffType type, BigDecimal price) {
         Tariff tariff = Tariff.builder()
                 .price(price)
                 .type(type)
@@ -97,8 +100,9 @@ public class TestUtil {
         return tariff;
     }
 
-    private User saveUser(Session session, String username, String firstname, String lastname,
-                          String password, Role role){
+    private User saveUser(Session session, String username,
+                          String firstname, String lastname,
+                          String password, Role role) {
         User user = User.builder()
                 .personalInfo(PersonalInfo.builder()
                         .firstname(firstname)
@@ -112,7 +116,8 @@ public class TestUtil {
         return user;
     }
 
-    private Car saveCar(Session session, String model, Status status, CarCharacteristic carCharacteristic){
+    private Car saveCar(Session session, String model, Status status,
+                        CarCharacteristic carCharacteristic) {
         Car car = Car.builder()
                 .model(model)
                 .status(status)
@@ -123,8 +128,9 @@ public class TestUtil {
     }
 
     private CarCharacteristic saveCarCharacteristic(Session session,
-                                                    Integer engineVolume, TypeFuel type, TypeTransmission transmission,
-                                                    LocalDate dateRelease){
+                                                    Integer engineVolume, TypeFuel type,
+                                                    TypeTransmission transmission,
+                                                    LocalDate dateRelease) {
         CarCharacteristic carCharacteristic = CarCharacteristic.builder()
                 .engineVolume(engineVolume)
                 .type(type)
@@ -135,12 +141,12 @@ public class TestUtil {
         return carCharacteristic;
     }
 
-    private void addCarCharacteristic(CarCharacteristic carCharacteristic, Car car){
+    private void addCarCharacteristic(CarCharacteristic carCharacteristic, Car car) {
         carCharacteristic.setCar(car);
     }
 
     private void saveRequest(Session session, LocalDateTime dateRequest, LocalDateTime dateReturn,
-                                Tariff tariff, Car car, User user){
+                             Tariff tariff, Car car, User user) {
         Request request = Request.builder()
                 .tariff(tariff)
                 .car(car)
@@ -149,12 +155,5 @@ public class TestUtil {
                 .dateRequest(dateRequest)
                 .build();
         session.save(request);
-    }
-
-    public static Tariff getTariff() {
-        return Tariff.builder()
-                .price(new BigDecimal(12))
-                .type(TariffType.HOURLY)
-                .build();
     }
 }

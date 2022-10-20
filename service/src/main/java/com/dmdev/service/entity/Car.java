@@ -24,7 +24,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = {"model", "status"})
-@ToString(exclude = "requests")
+@ToString(exclude = {"requests", "carCharacteristic"})
 @Builder
 @Entity
 public class Car implements BaseEntity<Long> {
@@ -33,7 +33,7 @@ public class Car implements BaseEntity<Long> {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL, optional = false)
+    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL)
     private CarCharacteristic carCharacteristic;
 
     @Column(nullable = false)
